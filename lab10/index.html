@@ -1,0 +1,154 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+<title>Margarita Margaryan | Animation</title>
+<style> 
+
+body {
+	background-image: url(img/backround.png);
+	background-repeat: no-repeat;
+	margin: 0auto;
+	text-align: center;
+	background-size: cover;
+
+}
+
+
+@font-face {
+	font-family: pacman;
+	src:  url(fonts/PAC-FONT.ttf);
+}
+
+h1 {
+	font-family: pacman;
+	color: yellow;
+	font-size: 60px;
+	background-color: orange;
+	display: inline-block;
+	padding: 5px;
+	border: solid 3px red;
+	margin-top: 0px;
+	position: relative;
+}
+
+#pacman {
+	width: 50px;
+	position: absolute;
+	left: 1;
+	bottom: 310;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 8s;
+	animation-name: pacman;
+}
+
+
+
+@keyframes pacman {
+			0% {left: 0px; bottom: 320px;}
+			10%{left: 420px; bottom: 330px;}
+			20% {left: 485px; bottom: 400px;}
+			50% {left: 700px; bottom: 400px;}
+			60% {left: 800px; bottom: 400px;}
+			70% {left: 900px; bottom: 400px;}
+			80% {left: 900px; bottom: 330px;}
+			100% {left: 1400px; bottom: 330px;}
+		}
+
+@keyframes text {
+			0% {left: 0px; bottom: 390px;}
+			10%{left: 420px; bottom: 390px;}
+			20% {left: 485px; bottom: 470px;}
+			50% {left: 700px; bottom: 470px;}
+			60% {left: 800px; bottom: 470px;}
+			70% {left: 900px; bottom: 470px;}
+			80% {left: 900px; bottom: 390px;}
+			100% {left: 1400px; bottom: 390px;}
+
+		}
+@keyframes circle1 {
+			0% {left: 0px; bottom: 380px;}
+			10%{left: 440px; bottom: 380px;}
+			20% {left: 505px; bottom: 460px;}
+			50% {left: 720px; bottom: 460px;}
+			60% {left: 820px; bottom: 460px;}
+			70% {left: 920px; bottom: 460px;}
+			80% {left: 920px; bottom: 380px;}
+			100% {left: 1420px; bottom: 380px;}
+
+		}
+@keyframes circle2 {
+			0% {left: 0px; bottom: 370px;}
+			10%{left: 420px; bottom: 370px;}
+			20% {left: 485px; bottom: 450px;}
+			50% {left: 700px; bottom: 450px;}
+			60% {left: 800px; bottom: 450px;}
+			70% {left: 900px; bottom: 450px;}
+			80% {left: 900px; bottom: 370px;}
+			100% {left: 1400px; bottom: 370px;}
+
+	}
+
+
+p {
+	display: inline-block;
+	border:  solid 3px red ;
+	border-radius: 10px;
+	padding: 10px;
+	color: yellow;
+	position: absolute;
+	left: 20;
+	bottom: 390 ;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 8s;
+	animation-name: text;
+
+}
+
+#circle1, #circle2 {
+	width: 30px;
+	padding: 0px;
+	margin: 0px;
+	
+}
+
+#circle1 {
+	position: absolute;
+	left: 30;
+	bottom: 360 ;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 8s;
+	animation-name: circle1;
+}
+
+#circle2 {
+	position: absolute;
+	left: 60;
+	bottom: 380 ;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	animation-duration: 8s;
+	animation-name: circle2;
+}
+
+
+</style>
+</head>
+	<body> 
+
+<h1> PAC MAN </h1>
+
+<div id="animation">
+	<p> MORE MORE MORE </p>
+	<img class="animation" src="img/circle.png" alt="circle1" id="circle1">
+	<img class="animation" src="img/circle.png" alt="circle2" id="circle2">
+
+<img class="animation" src="img/pacman.gif" alt="pacman" id="pacman">
+
+
+</div>
+
+	</body>
+</html>

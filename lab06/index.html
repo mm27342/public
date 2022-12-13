@@ -1,0 +1,111 @@
+	<!DOCTYPE html> 
+<html>
+<head> 
+	<title>Simple Image Gallery | Margarita Margrayan</title>
+<style> 
+
+#container {
+	width: 950px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#header{
+	text-align: center;
+}
+
+#content {
+	margin: 0 auto;
+	padding-left: 35px;
+}
+body { 
+	background-color: #dfbf9f;
+ }
+
+.portrait {
+	width: 210px;
+	height: 280px;
+	margin: 5px;
+
+}
+
+.landscape {
+	width: 400px;
+	height: 280px;
+	margin: 5px;
+}
+
+img {
+	border: 2px solid black;
+}
+
+h1, p{
+	color: #4d2600;
+	margin: 0px;
+}
+
+.floatleft {
+	float: left;
+}
+
+.floatleft p{ visibility: hidden; }
+.floatleft:hover p{ visibility: visible; }
+
+
+</style>
+</head>
+
+<body> 
+<div id="container">
+
+<div id="header">
+	<h1>Honorable Food Mentions</h1>
+</div>
+
+
+<div id="content">
+
+
+
+<div id="row1">
+<div class="floatleft">
+	<img class="landscape" src="images/innout.jpeg">
+<p>In-N-Out, Hollywood</p>
+</div>
+
+
+<div class="floatleft">
+	<img class="portrait"src="images/lul.JPG">
+<p>Love You Latte, Glendale</p>
+</div>
+
+<div class="floatleft">
+	<img class="portrait" src="images/annenberg.JPG">
+<p>Annenber Café, USC</p>
+</div>
+</div>
+
+<div id="row2">
+<div class="floatleft">
+	<img class="portrait" src="images/fish.JPG">
+<p>Lavash, Yerevan, Armenia</p>
+</div>
+
+
+<div class="floatleft">
+	<img class="portrait" src="images/urth.JPG">
+<p>Urth Café, LA</p>
+</div>
+
+<div class="floatleft">
+	<img class="landscape" src="images/spread.jpg">
+<p>Appetizer Spread</p>
+</div>
+</div>
+</div>
+</div>
+
+
+
+</body>
+</html>

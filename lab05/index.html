@@ -1,0 +1,137 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+	<title>Margarita Margaryan | Lab 05</title>
+
+<style>
+	.form-row {
+		margin: 10px 0px;
+		flex: left;
+	}
+
+	h1 {
+		color: white;
+		text-shadow: 4px 4px 3px #990000;
+		margin: 0px;
+		text-align: center;
+		padding-top: 160px;
+		font-size: 50px;
+	}
+
+	#header {
+		background-image: url("potluck.jpeg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 270px;
+		background-position: center;
+	}
+
+	.main-label {
+		color: #990000;
+	}
+
+	body {
+		background-color: #f2e6ff;
+		margin: 0px;
+	}
+
+	#content {
+		padding: 10px;	
+	}
+
+	.button {
+		background-color: #990000;
+		color: white;
+	}
+
+</style>
+</head>
+
+
+<body> 
+
+<div id="header">
+<h1> Potluck RSVP Form</h1>
+</div>
+
+<div id="content">
+<form action="confirmation.html">
+<div class="form-row">
+	<label class="main-label" for="name">Name:</label>
+	<input id="name" type="text" placeholder="First Last" required>
+</div>
+
+<div class="form-row">
+	<label class="main-label" for="email">Email:</label>
+	<input id="email" type="email" placeholder="myname@gmail.com" required>
+</div>
+
+<div class="form-row">
+	<label class="main-label" for="phone-number">Phone Number:</label>
+	<input type="phone" placeholder="(123)-456-7890">
+</div>
+
+<div class="form-row">
+	<label class="main-label" for="guest-number"> Number of guests:</label><!-- Drop down -->
+	<select id="guest-number">
+		<option value="0">0</option>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="2+">3+</option>
+	</select>
+</div>
+
+<div class="form-row">
+	<label class="main-label"> Course:</label><!-- radio -->
+	<label for="appetizer">
+		<input id="appetizer" type="radio" name="Course">Appetizer
+	</label>
+	<label for="side">
+		<input id="side" type="radio" name="Course">Side
+	</label>
+	<label for="main">
+		<input id="main" type="radio" name="Course">Main
+	</label>
+	<label for="desert">
+		<input id="desert" type="radio" name="Course">Desert
+	</label>
+</div>
+
+<div class="form-row">
+	<label class="main-label">Contains:</label> <!-- checkbox -->
+		<label for="nuts">
+			<input id="nuts" type="checkbox" name="nuts" value="Nuts">Nuts
+		</label>
+
+		<label for="eggs">
+			<input id="eggs" type="checkbox" name="eggs" value="Eggs">Eggs
+		</label>
+
+		<label for="gluten">
+			<input id="gluten" type="checkbox" name="gluten" value="Gluten">Gluten
+		</label>
+
+		<label for="dairy">
+			<input id="dairy" type="checkbox" name="dairy" value="Eggs">Dairy
+		</label>
+</div>
+
+<div class="form-row">
+	<label class="main-label" for="comments">Additional Comments:</label><!-- textarea -->
+		<textarea id="comments" placeholder="Additional Comments"></textarea>
+</div>
+
+<div class="form-row">
+	<input id="terms" type="checkbox" name="terms" value="terms" required>I accept the terms and conditions
+</div>
+
+
+<div class="form-row">
+	<button class="button" type="submit">RSVP</button>
+	<button class="button" type="reset">Clear Form</button>
+</div>
+</form>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+	<!DOCTYPE html> 
+<html>
+<head> 
+	<link href="lightbox/css/lightbox.css" rel="stylesheet"/>
+
+	<title>Simple Image Gallery | Margarita Margrayan</title>
+<style> 
+
+#container {
+	width: 950px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#header{
+	text-align: center;
+}
+
+#content {
+	margin: 0 auto;
+	padding-left: 35px;
+}
+body { 
+	background-color: #dfbf9f;
+ }
+
+.portrait {
+	width: 210px;
+	height: 280px;
+	margin: 5px;
+
+}
+
+.landscape {
+	width: 400px;
+	height: 280px;
+	margin: 5px;
+}
+
+img {
+	border: 2px solid black;
+}
+
+h1, p{
+	color: #4d2600;
+	margin: 0px;
+}
+
+.floatleft p{ visibility: hidden; }
+.floatleft:hover p{ visibility: visible; }
+
+.floatleft {
+	display:inline-block;
+	overflow:hidden;
+	float: left;
+}
+
+</style>
+</head>
+
+<body> 
+<div id="container">
+
+<div id="header">
+	<h1>Honorable Food Mentions</h1>
+</div>
+
+
+<div id="content">
+
+<div class="floatleft">
+	<a href="../images/innout.jpeg" data-lightbox="food" data-title="In-N-Out, Hollywood">
+	<img class="landscape" src="../images/innout.jpeg" title="Picture 1"></a>
+</div>
+
+
+<div class="floatleft">
+	<a href="../images/lul.JPG" data-lightbox="food" data-title="Love You Latte, Glendale">
+	<img class="portrait" src="../images/lul.JPG" title="Picture 2"></a>
+</div>
+
+<div class="floatleft">
+	<a href="../images/annenberg.JPG" data-lightbox="food" data-title="Annenberg Café, USC">
+	<img class="portrait" src="../images/annenberg.JPG" title="Picture 3"></a>
+</div>
+
+<div class="floatleft">
+	<a href="../images/fish.JPG" data-lightbox="food" data-title="Lavash, Yerevan, Armenia">
+	<img class="portrait" src="../images/fish.JPG" title="Picture 4"></a>
+</div>
+
+
+<div class="floatleft">
+	<a href="../images/urth.JPG" data-lightbox="food" data-title="Urth Café, LA">
+	<img class="portrait" src="../images/urth.JPG" title="Picture 5"></a>
+</div>
+
+<div class="floatleft">
+	<a href="../images/spread.jpg" data-lightbox="food" data-title="Appetizer Spread">
+	<img class="landscape" src="../images/spread.jpg" title="Picture 6"></a>
+</div>
+</div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+
+<script src="lightbox/js/lightbox-plus-jquery.js"></script>
+
+
+</body>
+</html>
